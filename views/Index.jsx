@@ -6,13 +6,13 @@ class Index extends React.Component {
     render() {
         const { products } = this.props
         return (
-            <DefaultLayout title={'Browse Products'}>
+            <DefaultLayout>
                 <div>
                     <ul style={{ listStyleType: 'none' , display: 'grid', gridTemplateColumns: 'repeat(3, 1fr'}}>
                         {this.props.products.map((product, i) => {
                             return <li style={{ margin: '28px'}}>
                                 <div style={{ }}>
-                                    <a href={`/products/${product.id}`}><img style={{ height: "200px" }} src={product.imageLink} alt={product.displayName} /></a>
+                                    <a href={`/products/${product.id}`}><img style={{ height: "200px" }} src={product.imageLink} alt="" /></a>
                                     <br />
                                     <a style={{ textDecoration: 'none', color: 'black', fontSize: '18px', marginBottom: '18px'}} href={`/products/${product.id}`}>{product.displayName} {product.subCategory}</a>
                                     <br />

@@ -4,7 +4,7 @@ const DefaultLayout = require('./Default')
 class Cart extends React.Component {
     render() {
         return(
-            <DefaultLayout title={'Browse Products'}>
+            <DefaultLayout>
                 welcome your cart
             </DefaultLayout>    
         )

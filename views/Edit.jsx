@@ -14,7 +14,7 @@ class Edit extends React.Component {
                     Subcategory <input type="text" name="subCategory" defaultValue={this.props.product.subCategory} /><br />
                     Price: <input type="number" name="price" defaultValue={this.props.product.price} /><br />
                     Quantity: <input type="number" name="quantity" defaultValue={this.props.product.quantity} /><br />
-                    <input type="submit" name='' value="submit changes" />
+                    <input style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'rgb(158, 0, 89)', width: '200px', marginTop: '8px'}} type="submit" name='' value="submit changes" />
             </form>                
             </DefaultLayout>
         )

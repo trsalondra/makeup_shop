@@ -25,7 +25,9 @@ class DefaultLayout extends React.Component {
                             <a style={{ padding: '8px', textDecoration: 'none', color: 'black' }} href='/products'>CART</a>
                         </div>
                     </nav>
-                    <hr style={{ margin: '0'}}/>
+
+                    <hr style={{ marginBottom: '30px'}}/>
+
                     <div style={{ width: '1000px', margin: 'auto'}}>
                         {this.props.children}
                     </div>

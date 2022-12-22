@@ -21,8 +21,8 @@ class DefaultLayout extends React.Component {
                         </div>
                         <a style={{ position: 'absolute', left: '50%', padding: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '20px', color: 'rgb(158, 0, 89)', fontFamily: '"Gill Sans", sans-serif' }} href='/'>Beauty Vault</a>
                         <div style={{ padding: '8px' }}>
-                            <a style={{ padding: '8px', textDecoration: 'none', color: 'black' }} href='/products/new'>Create New Product</a>
-                            <a style={{ padding: '8px', textDecoration: 'none', color: 'black' }} href='/products'>CART</a>
+                            <a style={{ padding: '8px', color: 'black' }} href='/products/new'>Create New Product</a>
+                            <a style={{ padding: '8px', textDecoration: 'none', color: 'black' }} href='/cart'>CART</a>
                         </div>
                     </nav>
 

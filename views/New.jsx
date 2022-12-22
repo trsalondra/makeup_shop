@@ -4,7 +4,7 @@ const DefaultLayout = require('./Default')
 class New extends React.Component {
     render() {
         return (
-            <DefaultLayout title={'new product form'}>
+            <DefaultLayout title={"Don't see what you like? Create it!"}>
             <div>
                 <form action='/products' method='POST'>
                     Product Name: <input type="text" name="displayName" /><br />

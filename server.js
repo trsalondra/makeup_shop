@@ -126,6 +126,18 @@ app.get('/products/collections/:id', async (req, res) => {
     })
 })
 
+app.get('/cart', async (req, res) => {
+    Product.find({ category: req.params.id}, (err, collectionProducts) => {
+        if (!err) {
+            res.render('Cart', {
+                // products: collectionProducts
+            })
+        } else {
+            res.send({ msg: err.message })
+        }
+    })
+})
+
 
 
 

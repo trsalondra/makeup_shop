@@ -5,20 +5,31 @@ class Show extends React.Component {
     render() {
         const { product } = this.props
         return (
-            <DefaultLayout title={"single product"}>
-            <div>
-                <img src={this.props.product.imageLink} alt="" />
-                <h1>{this.props.product.displayName}</h1>
-                <h2>${this.props.product.price}</h2>
-                <p>{this.props.product.description}</p>
+            <DefaultLayout>
+                <div style={{ display: 'flex' }}>
+                    <div style={{color: 'black'}}>
+                        <h1 style={{ fontSize: '50px', margin: '0px' }}>{this.props.product.displayName}</h1>
+                        <p style={{fontFamily: 'system-ui', fontSize: '12px', color: 'rgb(158, 0, 89)' }}>Currently In Stock: {this.props.product.quantity}</p>
 
-                <button><a href={`/products/${product._id}/edit`}>edit</a></button>
-                <form action={`/products/${product._id}?_method=DELETE`} method="POST">
-                        <input type="submit" value="Delete" />
-                    </form>
-            </div>
+                        <p style={{fontFamily: 'system-ui' }}>{this.props.product.description}</p>
+
+                        <a href='/cart'><button style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(158, 0, 89)', border: '2px solid rgb(158, 0, 89)', color: 'white', width: '200px', marginTop: '8px'}} >ADD TO CART ${product.price}</button></a>
+                        <br />
+
+                        <a href={`/products/${product._id}/edit`}><button style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'rgb(158, 0, 89)', width: '80px', marginTop: '8px'}}>Edit</button></a>
+                        <br />
+
+                        <form action={`/products/${product._id}?_method=DELETE`} method="POST">
+                            <input style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'rgb(158, 0, 89)', width: '80px', marginTop: '8px'}} type="submit" value="Delete" />
+                        </form>
+
+
+                    </div>
+
+                    <img style={{ width: '500px' }} src={this.props.product.imageLink} alt="" />
+                </div>
+
             </DefaultLayout>
-
         )
     }
 }

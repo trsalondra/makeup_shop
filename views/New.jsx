@@ -8,7 +8,7 @@ class New extends React.Component {
                  
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                 <form action='/products' method='POST'>
-                <h1>Don't see what you like? {<br />} Create it!</h1>
+                <h1>Don't see what you need? {<br />} Create it!</h1>
                     Product Name: <br /><input style={{marginBottom: '18px', width: '250px'}} type="text" name="displayName" /><br />
                     Description: <br /><input style={{marginBottom: '18px', width: '250px', height: '50px'}} type="text" name="description" /><br />
                     Image Link: <br /><input style={{marginBottom: '18px', width: '250px'}} type="text" name="imageLink" /><br />

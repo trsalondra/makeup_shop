@@ -137,11 +137,3 @@ app.get('/cart', async (req, res) => {
         }
     })
 })
-
-
-
-
-
-
-
-

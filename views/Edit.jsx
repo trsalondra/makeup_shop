@@ -21,12 +21,21 @@ class Edit extends React.Component {
                     <form action={`/products/${this.props.product._id}?_method=PUT`} method='POST'>
                         <h1>Do you see a mistake? {<br />} Correct it!</h1>
                         Product Name: <br /><input style={{ marginBottom: '18px', width: '250px' }} type="text" name="displayName" defaultValue={this.props.product.displayName} /><br />
+                        
                         Description: <br /><input style={{ marginBottom: '18px', width: '250px', height: '50px' }} type="text" name="description" defaultValue={this.props.product.description} /><br />
+                        
                         Image Link: <br /><input style={{ marginBottom: '18px', width: '250px' }} type="text" name="imageLink" defaultValue={this.props.product.imageLink} /><br />
+                        
                         Category: <br /><input style={{ marginBottom: '18px', width: '250px' }} type="text" name="category" defaultValue={this.props.product.category} /><br />
+                        
                         Subcategory <br /><input style={{ marginBottom: '18px', width: '250px' }} type="text" name="subCategory" defaultValue={this.props.product.subCategory} /><br />
+                        
                         Price: <br /><input style={{ marginBottom: '18px', width: '250px' }} type="text" name="price" defaultValue={this.props.product.price} /><br />
+                        
                         Quantity: <br /><input style={{ marginBottom: '18px', width: '250px' }} type="number" name="quantity" defaultValue={this.props.product.quantity} /><br />
+                        <input style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'rgb(158, 0, 89)', width: '120px', marginBottom: '18px' }} type="submit" name='' value="submit changes" />
+
+                        In Cart: <br /><input style={{ marginBottom: '18px', width: '250px' }} type="number" name="inCart" defaultValue={this.props.product.inCart} /><br />
                         <input style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'rgb(158, 0, 89)', width: '120px', marginBottom: '18px' }} type="submit" name='' value="submit changes" />
                     </form>
 

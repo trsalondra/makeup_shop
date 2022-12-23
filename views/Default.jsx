@@ -7,38 +7,34 @@ class DefaultLayout extends React.Component {
                 <head>
                     <title>Beauty Vault</title>
                 </head>
-                <body style={{ height: '100vh',display: 'flex', flexDirection: 'column', justifyContent: 'space-between', margin: '0', color: 'rgb(158, 0, 89)', backgroundColor: 'rgb(255, 255, 252)' }}>
+                <body style={{ margin: '0', color: 'rgb(158, 0, 89)', backgroundColor: 'rgb(255, 255, 252)' }}>
+
                     <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: 'system-ui', fontSize: '15px', height: '50px' }}>
                         <div style={{ width: '30%' }}>
                             <ul style={{ display: 'flex', margin: '0', padding: '0', listStyleType: 'none' }}>
                                 <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products'>SHOP</a></li>
-                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/eyes'>EYES</a></li>
+                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/eye'>EYES</a></li>
                                 <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/face'>FACE</a></li>
-                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/lips'>LIPS</a></li>
-                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/palettes'>PALETTES</a> </li>
-                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/tools'>TOOLS</a> </li>
+                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/lip'>LIPS</a></li>
+                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/palette'>PALETTES</a> </li>
+                                <li style={{ padding: '8px' }}><a style={{ textDecoration: 'none', color: 'black' }} href='/products/collections/tool'>TOOLS</a> </li>
                             </ul>
-
                         </div>
+
                         <a style={{ padding: '8px', textDecoration: 'none', fontWeight: 'bold', fontSize: '20px', color: 'rgb(158, 0, 89)', fontFamily: '"Gill Sans", sans-serif' }} href='/'>Beauty Vault</a>
+
                         <div style={{ padding: '8px' }}>
                             <a style={{ padding: '8px', color: 'black' }} href='/products/new'>Create New Product</a>
                             <a style={{ padding: '8px', textDecoration: 'none', color: 'black' }} href='/cart'>CART</a>
                         </div>
-                        
                     </nav>
-                    
 
-                    {/* <hr style={{ marginBottom: '30px' }} /> */}
+                    <hr style={{ marginBottom: '30px' }} />
 
                     <div style={{ width: '1000px', margin: 'auto' }}>
                         {this.props.children}
                     </div>
 
-                    <footer style={{ display: 'flex', flexDirection: 'column',alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgb(158, 0, 89)', color: 'white' }}>
-                        <p style={{ paddingTop: '30px', margin: '0px' }}>Images and information via <a style={{ color: 'white' }} href="https://www.makeupgeek.com/">makeupgeek.com</a></p>
-                        <p style={{ paddingBottom: '30px', margin: '0px' }}>Inspired by <a style={{ color: 'white' }} href="https://www.rarebeauty.com/">rarebeauty.com</a></p>
-                    </footer>
                 </body>
             </html >
         )

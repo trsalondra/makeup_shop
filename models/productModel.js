@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const { float } = require('webidl-conversions')
 
 const Schema = mongoose.Schema
+const model = mongoose.model
 
 const productSchema = new Schema({
     displayName: {
@@ -31,8 +32,12 @@ const productSchema = new Schema({
     quantity: {
         type: Number,
         required: true
+    },
+    inCart: {
+        type: Number,
+        required: true
     }
 }, { timestamps : true })
 
-module.exports = mongoose.model('Product', productSchema)
+module.exports = model('Product', productSchema)
 

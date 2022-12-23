@@ -127,10 +127,10 @@ app.get('/products/collections/:id', async (req, res) => {
 })
 
 app.get('/cart', async (req, res) => {
-    Product.find({ category: req.params.id}, (err, collectionProducts) => {
+    Product.find({ inCart: { $gt: 1 } }, (err, cartProducts) => {
         if (!err) {
             res.render('Cart', {
-                // products: collectionProducts
+                products: cartProducts
             })
         } else {
             res.send({ msg: err.message })

@@ -79,6 +79,21 @@ app.put('/products/:id', (req, res) => {
     })
 })
 
+// app.put('/products/:id', (req,res)=>{
+//     console.log(req.body);
+//     if(req.body.quantity==='BUY'){
+//        Supply.findByIdAndUpdate(req.params.id, {$inc:{'quantity':-1}}, (err, updatedItem)=>{
+//         res.redirect(`/products/${req.params.id}`)
+//        })
+//     }
+//     else{ 
+//         Supply.findByIdAndUpdate(req.params.id, req.body, (err,updatedItem)=>{
+//         res.redirect(`/products/${req.params.id}`);
+//         });
+//     }
+    
+// });
+
 // CREATE // create a new product
 app.post('/products/', (req, res) => {
     Product.create(req.body, (err, createdProduct) => {
@@ -127,7 +142,7 @@ app.get('/products/collections/:id', async (req, res) => {
 })
 
 app.get('/cart', async (req, res) => {
-    Product.find({ inCart: { $gt: 1 } }, (err, cartProducts) => {
+    Product.find({ inCart: { $gt: 0 } }, (err, cartProducts) => {
         if (!err) {
             res.render('Cart', {
                 products: cartProducts

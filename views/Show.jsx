@@ -4,6 +4,19 @@ const DefaultLayout = require('./Default')
 class Show extends React.Component {
     render() {
         const { product } = this.props
+
+        // const showBuyBtn =()=>{
+        //     if(this.props.product.inCart > 0){
+        //        return( <form action={`/products/${items.id}?_method=PUT`} method="POST">
+        //              <input type="submit" name="inCart" value="BUY" /> <br />
+        //           </form> 
+        //           );  
+        //     }
+        //     else{
+        //         return(<div>Out Of Stock</div>);
+        //     }
+        // }
+
         return (
             <DefaultLayout>
                 {/* link to all products */}

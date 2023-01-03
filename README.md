@@ -1,10 +1,9 @@
 # Beauty Vault
-
-## About the project
 This website is the second project for my Software Engineering bootcamp at Per Scholas.
 
-I chose to create a website for a makeup store because I enjoy the simple look of makeup websites like Rare Beauty and Makeup Geek. 
+I chose to create a website for a makeup store because I enjoy the simple look of makeup websites like Rare Beauty and Makeup Geek.
 
+## About the project
 To a view all products:
 - click the "SHOP" link to the left most of the nav bar.
 

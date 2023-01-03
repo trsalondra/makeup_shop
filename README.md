@@ -1,20 +1,34 @@
 # Beauty Vault
 
-## Introduction and Motivation
-This website is for the second project of my Software Engineering bootcamp at Per Scholas.
+## About the project
+This website is the second project for my Software Engineering bootcamp at Per Scholas.
 
 I chose to create a website for a makeup store because I enjoy the simple look of makeup websites like Rare Beauty and Makeup Geek. 
 
-[YouTube Presentation Video](https://www.youtube.com/)
+To a view all products:
+- click the "SHOP" link to the left most of the nav bar.
 
+To a view products fillered by catergoty:
+- click the "EYES", "FACE", "LIPS", "PALETTES", or "TOOLS" links on the left of the nav bar.
 
-### Update Route (URL: /meals/:id)
-Clicking the Buy button will update the meal's quantity by decrementing it by 1. It also redirects the user to the meal's show page which will now display the updated quantity. 
+To a view product details:
+- click the product's image or the product's name. 
+- Here you see options to add the product to cart, edit the product, and delete the product.
 
-If the quantity remaining is ever less than 1, a SOLD OUT text will replace the quantity on the show page, and the Buy button will be removed.
+To create products:
+- click the "Create New Pruduct" link to the right of the nav bar, complete the form, and submit. 
 
-![Home Route](/public/images/)
+To view the products in the Cart:
+- click the "CART" link to the right most of the nav bar.
 
+## How the project looks
+[click here to watch](https://screencast-o-matic.com/watch/c0Ve04VwjYc)
+
+## Installation instructions
+To clone or fork the repository using your terminal:
+- copy the following code: `git clone https://github.com/trsalondra/Store-App.git`
+- use VScode, download the required packages
+- use your localhost:3000 to run the website
 
 ## Technologies Used
 - JavaScript
@@ -29,7 +43,3 @@ If the quantity remaining is ever less than 1, a SOLD OUT text will replace the 
 
 ## Acknowledgements and Resources
 - My instructors Tishana Trainor and Kasper Kain
-
-## To access this repo:
-Open Git Bash and run the following in your terminal:
-`git clone https://github.com/trsalondra/Store-App.git`

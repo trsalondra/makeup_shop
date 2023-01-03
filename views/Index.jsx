@@ -19,20 +19,20 @@ class Index extends React.Component {
                                     </a>
 
                                     <br />
-
+                                    {/* product price */}
+                                    {product.quantity === 0 ? <p style={{ fontFamily: 'system-ui', fontSize: '12px', color: 'rgb(158, 0, 89)' }}>
+                                        ${product.price} - OUT OF STOCK</p> :
+                                        <p style={{ fontFamily: 'system-ui', fontSize: '12px', color: 'rgb(158, 0, 89)' }}>
+                                        ${product.price} - IN STOCK</p>
+                                    }
+                                    
                                     {/* product name */}
                                     <a style={{ textDecoration: 'none', color: 'black', fontSize: '18px', marginBottom: '18px' }} href={`/products/${product.id}`}>
                                         {product.displayName} {product.subCategory}
                                     </a>
 
-                                    {/* product price */}
-                                    <p style={{ fontFamily: 'system-ui', fontSize: '12px', color: 'rgb(158, 0, 89)' }}>
-                                        ${product.price}
-                                    </p>
 
-                                    {/* add to cart button or out of stock button*/}
-                                    {product.quantity > 0 ? <a href='/cart'><button style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'rgb(158, 0, 89)', width: '200px' }} >ADD TO CART</button></a> : <button style={{ padding: '8px', fontFamily: 'system-ui', fontSize: '12px', backgroundColor: 'rgb(255, 255, 252)', border: '2px solid rgb(158, 0, 89)', color: 'grey', width: '200px' }} >OUT OF STOCK
-                                    </button>}
+
                                 </div>
                             </li>
                         })}

@@ -8,7 +8,6 @@ class DefaultLayout extends React.Component {
                     <title>Beauty Vault</title>
                 </head>
                 <body style={{ margin: '0', color: 'rgb(158, 0, 89)', backgroundColor: 'rgb(255, 255, 252)' }}>
-
                     <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: 'system-ui', fontSize: '15px', height: '50px' }}>
                         <div style={{ width: '30%' }}>
                             <ul style={{ display: 'flex', margin: '0', padding: '0', listStyleType: 'none' }}>
@@ -34,7 +33,6 @@ class DefaultLayout extends React.Component {
                     <div style={{ width: '1000px', margin: 'auto' }}>
                         {this.props.children}
                     </div>
-
                 </body>
             </html >
         )
